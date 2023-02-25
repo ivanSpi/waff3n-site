@@ -1,0 +1,219 @@
+html {
+  background-color: black;
+}
+html > * {
+  width: 1800px;
+  margin: 0 auto;
+  align-content: center;
+  background-color: rgb(36, 34, 34);
+}
+
+header {
+  margin: 0 0;
+  color: white;
+}
+
+header > div:first-child{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  border: 4px rgb(255, 255, 255) solid;
+  border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+header div img:first-child{
+  max-width: 10em;
+  max-height: 100%;
+}
+
+header div img:last-child{
+  max-height: 4em;
+  max-width: 4em;
+  margin-right: 3em;
+}
+
+header div h1{
+  flex: 2;
+  text-align: center;
+  padding-right: 25px;
+  font-size: 48px;
+}
+
+header div * {
+  flex: 1;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav *{
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+#Learning {
+  position: relative;
+  display: inline-block;
+}
+
+#learning-content{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  margin-top: 10px;
+  margin-left: 30px;
+  min-width: 260px;
+  z-index: 1;
+}
+#learning-content a{
+   margin-bottom: 10px;
+   color:black;
+}
+
+
+
+.switcher-left,
+.switcher-right {
+  position: absolute;
+  background-color: white;
+  align-content: center;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+}
+.switcher-right{
+margin-top: 230px;
+margin-left: 1760px;
+}
+.switcher-left{
+  margin-top: 230px;
+  margin-left: -30px;
+  }
+.switcher-right img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.switcher-left img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+main section h2 {
+  color: white;
+  text-shadow: 2px 0 black, 0 2px black, -2px 0 black, 0 -2px black;
+}
+  
+
+main section:first-of-type h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+main section:first-of-type > .news {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+main section > .news * {
+  flex: 1;
+  height: 100%;
+}
+
+.news > *{
+ border: 2px rgb(255, 255, 255) solid; 
+ opacity: 0.4;
+ background-size: cover;
+]background-position: center;
+}
+
+
+.news * p{
+ margin: 9em 1em;
+ max-height: 30%;
+ color: white;
+ border: 0;
+ font-size: 38px;
+ font-weight: bold;
+ text-shadow: 2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 2px 0 rgb(0, 0, 0), 0 -2px rgb(0, 0, 0);
+}
+
+.news div p span {
+  font-size: 22px;
+  display: block;
+  margin: 10px 0;
+  border: 0;
+  max-height: 60px;
+  font-weight: lighter;
+}
+
+
+
+.information{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.information div{
+  flex: 1;
+  margin-top: 10px;
+  background-color: rgb(36, 34, 34);
+  border-radius: 30px;
+  color: white
+}
+
+.information div img{
+  padding: 25px 0 25px 25px;
+  max-width: 40%;
+  opacity: 0.5;
+}
+
+.information div p {
+  font-size: 32px;
+  font-weight: bold;
+}
+.information div span {
+  display: block;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#info2 p,span {
+  padding-left: 30px;
+}
+#info1 p,span ,
+#info2 p,span {
+  padding-right: 30px;
+}
+
+.information #info1 img,
+.information #info3 img {
+  float:left;
+}
+
+.information #info2 img{
+  float: right;
+}
+
+footer {
+  padding-top: 400px;
+  text-align: center;
+  color:white;
+  background-color: black;
+}
+
+
+
+
+
+
+
+

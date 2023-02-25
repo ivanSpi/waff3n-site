@@ -1,0 +1,12 @@
+#Learning:hover #learning-content{
+  display: flex; 
+} 
+.nav > a:hover{
+  background-color: rgb(156, 154, 154);
+  color: white;
+}
+
+.news *:hover{
+  opacity: 1.0;
+  flex: 2;
+}
