@@ -1,9 +1,15 @@
 #Learning:hover #learning-content{
   display: flex; 
 } 
+
+#Learning:hover {
+  background-color: rgb(179, 179, 250);
+  color: black;
+}
+
 .nav > a:hover{
-  background-color: rgb(156, 154, 154);
-  color: white;
+  background-color: rgb(179, 179, 250);
+  color: black;
 }
 
 .news *:hover{
