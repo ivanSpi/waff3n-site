@@ -59,9 +59,9 @@ class News {
     let spanText = document.createElement('span')
     pTitle.textContent = this.title
     spanText.textContent = this.span
+    div.style.backgroundImage = 'url(' + this.image + ')'
     div.appendChild(pTitle)
     pTitle.appendChild(spanText)
-    div.style.backgroundImage = 'url(' + this.image + ')'
     return div
   }
 }
@@ -73,26 +73,35 @@ const btnLeft = document.querySelector('.switcher-left')
 const listOfNews = [
   new News('Minecraft','Some type of mine','minecraft.jpg'),
   new News('Roblox','Some roblox text nnn shiiiet','roblox.jpg'),
-  new News('Motivation','Not tiring just firing','movation.png'),
+  new News('Motivation','Not tiring just firing','motivation.png'),
   new News('Hmm its maybe should work','type text 404 error msg(joke)','minecraft.jpg')
 ]
+const currentNews = []
 
-for ( let i = 0; i < 2; i ++ ){
-    news.appendChild(listOfNews[i])
-    listOfNews.pop(listOfNews.shift())
+
+function initializeNews(){
+  let firstNew = listOfNews.shift()
+  let secondNew = listOfNews.shift()
+  news.appendChild(firstNew.upload())
+  news.appendChild(secondNew.upload())
+  currentNews.push(firstNew)
+  currentNews.push(secondNew)
 }
-btnRight.onclick = () => {
 
-  news.remove(news.lastChild)
-  let a = listOfNews.shift()
-  listOfNews.pop(a)
-  news.appendChild(a)
+initializeNews()
+
+btnRight.onclick = () => {
+  news.removeChild(news.lastElementChild)
+  let a = listOfNews.pop()
+  listOfNews.unshift(currentNews.pop())
+  currentNews.unshift(a)
+  news.insertBefore(a.upload(),news.firstChild)
 }
 btnLeft.onclick = () => {
-
-  news.remove(news.firstChild)
-  let a = listOfNews.push()
-  listOfNews.unshift(a)
-  news.appendChild(a)
-}
+  news.removeChild(news.firstElementChild)
+  let a = listOfNews.shift()
+  listOfNews.push(currentNews.shift())
+  currentNews.push(a)
+  news.appendChild(a.upload())
+} 
 

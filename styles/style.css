@@ -86,6 +86,7 @@ header div * {
   width: 70px;
   height: 70px;
   opacity: 1;
+  z-index: 2;
 }
 .switcher-right{
 margin-top: 230px;
@@ -131,9 +132,8 @@ main section > .news * {
  border: 2px rgb(255, 255, 255) solid; 
  opacity: 0.4;
  background-size: cover;
-]background-position: center;
+ background-position: center;
 }
-
 
 .news * p{
  margin: 9em 1em;
