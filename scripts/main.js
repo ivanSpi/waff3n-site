@@ -90,14 +90,14 @@ function initializeNews(){
 
 initializeNews()
 
-btnRight.onclick = () => {
+btnLeft.onclick = () => {
   news.removeChild(news.lastElementChild)
   let a = listOfNews.pop()
   listOfNews.unshift(currentNews.pop())
   currentNews.unshift(a)
   news.insertBefore(a.upload(),news.firstChild)
 }
-btnLeft.onclick = () => {
+btnRight.onclick = () => {
   news.removeChild(news.firstElementChild)
   let a = listOfNews.shift()
   listOfNews.push(currentNews.shift())
