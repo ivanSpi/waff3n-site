@@ -133,7 +133,7 @@ main section > .news * {
  border: 2px black solid;
  margin: 0 30px;
  border-radius: 20px;
- opacity: 0.4;
+ opacity: 0.6;
  background-size: cover;
  background-position: center;
 }
@@ -175,7 +175,7 @@ main section > .news * {
 .information div img{
   padding: 25px 0 25px 25px;
   max-width: 40%;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .information div p {
@@ -213,6 +213,59 @@ footer {
   background-color: white;
 }
 
+
+
+/* Game-page css features */
+
+.games{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 42px;
+}
+
+.games * {
+  width: 100%;
+  text-align: center;
+}
+
+.games * h3 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.calc {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px black solid;
+  border-radius: 30px;
+  background-color: rgb(139, 139, 247);
+}
+
+/* Contact-page css features */
+
+.contacts{
+  display: block;
+  align-items: center;
+  font-size: 42px;
+  background-color: aqua;
+  height: 500px;
+  border-radius: 80px;
+}
+.contacts h2 {
+  text-align: center;
+}
+
+.contacts img {
+  float: left;
+  margin-left: 20px;
+  border-radius: 40px;
+}
+.contacts p {
+  margin-left: 300px;
+  font-size: 32px;
+}
 
 
 
