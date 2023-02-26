@@ -34,7 +34,7 @@ function scrollFunction(){
 
 function focusingBlock(focusItem){
   focusItem.style.flex = '2'
-  focusItem.style.width = '130%'
+  focusItem.style.width = '110%'
   focusItem.style.position = 'relative'
   focusItem.style.alignSelf = 'center'
   focusItem.style.border = '2px solid white'
